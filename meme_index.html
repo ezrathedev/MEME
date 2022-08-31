@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body{background-color: black; background-repeat: no-repeat; background-position:top-left;}
+    h1{text-align: center; font-family:sans-serif; color: white; background-color: beige;}
+    P{text-align: center; font-family: Georgia, 'Times New Roman', Times, serif; font-size: 48px; font-style: normal; font-weight: 100;}
+  </style>
+  <title>Meme page with flask</title>
+</head>
+<body>
+  <h1>
+    <!-- this file needs to go into a folder called templates in order for this to work -->
+    a website to gather memes!
+  </h1>
+  <p>
+    here is your meme! this will refresh in 30 seconds!
+  </p>
+
+  <p><img src="{{meme_pic}}" alt="meme pic goes here"></p>
+  <p>current subreddit: {{subreddit}}</p>
+</body>
+</html>
